@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#6c63ff;
+    --green:#0eb582;
+    --white:#fff;
+    --light-white:#aaa;
+    --black:#3d3d3d;
+    --light-bg:#4b4b4b;
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+.heading-link{
+    text-align: center;
+    background:  rgb(238, 129, 147);
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about-text{
+    color: white;
+}
+
+span{
+    color:rgb(83, 62, 70);
+}
+
+.heading-link h3{
+    font-size: 30px;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.7;
+    color: var(--light-bg);
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+h2, h3{
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--white);
+}
+
+
+.head-about{
+    text-align: center;
+    background: #ef79b4;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+}
+
+h2{
+    color: black;
+    text-transform: capitalize;
+}
+
+.about-sec{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background: #c9bfac91;
+    width: auto;
+    height: 600px;
+    padding-left: 20px;
+}
+
+.image{
+    flex: 1 1 40rem;
+    width: 70%;
+}
+
+.icons img{
+    height: 7rem;
+    margin-bottom: 0.5rem;
+    width: 70%;
+}
+
+.about-cont{
+    flex: 1 1 40rem;
+    padding-right: 30px;
+}
+
+.about-title{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.p-sec{
+    font-size: 1rem;
+    line-height: 2;
+    color: #4a4747;
+    padding: 1rem 0;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.icon-cont{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.icons{
+    flex: 1 1 9rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    border: .10rem solid #ffffff;
+    background: rgb(241, 118, 181);
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#6c63ff;
+    --green:#0eb582;
+    --white:#fff;
+    --light-white:#aaa;
+    --black:#3d3d3d;
+    --light-bg:#4b4b4b;
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+.heading-link{
+    text-align: center;
+    background:  rgb(238, 129, 147);
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about-text{
+    color: white;
+}
+
+span{
+    color:rgb(83, 62, 70);
+}
+
+.heading-link h3{
+    font-size: 30px;
+}
+
+.courses{
+    background: #e1d6c8;
+    text-align: center;
+    align-items: center;
+}
+
+.courses_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course{
+    text-align: center;
+    border: 3px solid;
+    transition: var(--transition);
+    background: rgba(255, 192, 203, 0.805);
+}
+
+
+.course-info{
+    padding: 2rem;
+}
+
+.course-info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.7;
+    color: var(--light-bg);
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+h2, h3{
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--white);
+}
+
+img{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.btn{
+    display: inline-block;
+    background: var(--white);
+    color: black;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: #bcbcbc;
+    color: black;
+    border-color: black;
+}
+
+.btn-primary{
+    background: var(--light-bg);
+    color: var(--white);
+}

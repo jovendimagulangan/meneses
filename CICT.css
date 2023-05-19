@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#6c63ff;
+    --green:#0eb582;
+    --white:#fff;
+    --light-white:#aaa;
+    --black:#3d3d3d;
+    --light-bg:#4b4b4b;
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+}
+
+.heading-link{
+    text-align: center;
+    background:  rgb(238, 129, 147);
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about-text{
+    color: white;
+}
+
+span{
+    color:rgb(83, 62, 70);
+}
+
+.heading-link h3{
+    font-size: 30px;
+}
+
+.team{
+    background: #e1d6c8;
+    text-align: center;
+}
+
+.team h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.team-member{
+    background: var(--light-white);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover{
+    background: pink;
+    border-color: var(--light-white);
+}
+
+.team-member-image img{
+    filter: saturate(0); 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.team-member:hover img{
+    filter: saturate(1);
+}
+
+.team-member-info *{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team-member-socials{
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--light-white);
+    border-radius: 1rem 0 0 1rem;
+    transform: translateY(-50%);
+    box-shadow: -2rem 0  2rem rgba(173, 167, 167, 0.3);
+    transition: var(--transition);
+}
+
+.team-member:hover .team-member-socials{
+    right: 0;
+}
+
+.team-member-socials a{
+    padding: 1rem;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.7;
+    color: var(--light-bg);
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+h2, h3, h4, h5{
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--white);
+}
+
+img{
+    width: 50%;
+    margin-top: 20px;
+}
